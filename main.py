@@ -92,7 +92,7 @@ def check_coins():
     coins = list(filter(None, [char if char in list('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890')
                                     else '.' for char in coins]))
     # 3 -> S failsafe
-    if 'S' in coins: coins.replace(coins.index('S'), '3')
+    if 'S' in coins: coins.insert(coins.index('S'), '3')
     for i, char in enumerate(coins):
         if char in list('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'):
             # More failsafe (.. -> . / . .. -> .)
