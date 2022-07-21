@@ -19,3 +19,6 @@ Repeat:
     Check coins
   Rebirth
   ```
+
+Uses pytesseract to read backpack data, coin data, and rebirth data.
+Also sends logging information to Roblox's chat (can be disabled)
